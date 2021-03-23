@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { w3cwebsocket as W3CWebSocket } from "websocket"
 import styled from 'styled-components'
-// @ts-ignore
-import FlipNumbers from 'react-flip-numbers'
 
 import doge from './assets/images/doge-a.png'
 import { config } from './config'
@@ -46,8 +44,6 @@ const Container = styled.div`
 const Ticker = styled.div`
   display: flex;
   position: absolute;
-  top: 13.5em;
-  left: 2.5em;
   flex-direction: column;
 `
 
@@ -55,13 +51,13 @@ const DogeThumbnail = styled.div`
   background-image: url(${doge});
   background-size: cover;
   background-repeat: no-repeat;
-  width: 7.5em;
-  height: 7.5em;
+  width: 9em;
+  height: 9em;
 `
 
 const Price = styled.div`
   color: yellow;
-  margin: 0em;
+  margin: 0em 0.3em 0em 0em;
   font-size: 7em;
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 `
@@ -109,12 +105,7 @@ const App: React.FC = () => {
       <Ticker>
         <Row>
           <Price>
-            <FlipNumbers
-              play
-              width={60}
-              height={75}
-              numbers={`$${state.price.toFixed(4)}`}
-            />
+            {`$${state.price.toFixed(4)}`}
           </Price>
           <DogeThumbnail />
           <Percentage>
