@@ -34,8 +34,9 @@ const Icon = styled.div<{ iconURL: string }>`
   background-image: url(${({ iconURL }) => iconURL});
   background-size: cover;
   background-repeat: no-repeat;
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0em 0.2em;
 `
 
 const Price = styled.div<{ scale: number }>`

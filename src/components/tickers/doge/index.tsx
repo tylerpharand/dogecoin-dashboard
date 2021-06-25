@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { w3cwebsocket as W3CWebSocket } from "websocket"
 
 import { Ticker } from '../../ticker'
-import dogeIconURL from '../../../assets/images/doge-a.png'
+import dogeIconURL from '../../../assets/images/doge.png'
 import { config } from '../../../config'
 
 const tickerConfig = config.tickers.doge

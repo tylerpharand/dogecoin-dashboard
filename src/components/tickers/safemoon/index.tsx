@@ -2,7 +2,7 @@ import { Ticker } from '../../ticker'
 import { useState, useEffect } from 'react'
 import { w3cwebsocket as W3CWebSocket } from "websocket"
 
-import safemoonIconURL from '../../../assets/images/doge-a.png'
+import safemoonIconURL from '../../../assets/images/safemoon.png'
 import { config } from '../../../config'
 
 const tickerConfig = config.tickers.safemoon

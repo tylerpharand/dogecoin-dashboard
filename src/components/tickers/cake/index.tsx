@@ -2,7 +2,7 @@ import { Ticker } from '../../ticker'
 import { useState, useEffect } from 'react'
 import { w3cwebsocket as W3CWebSocket } from "websocket"
 
-import cakeIconURL from '../../../assets/images/doge-a.png'
+import cakeIconURL from '../../../assets/images/cake.png'
 import { config } from '../../../config'
 
 const tickerConfig = config.tickers.cake
