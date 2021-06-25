@@ -15,7 +15,7 @@ export const SafemoonTicker = () => {
   const [state, setState] = useState<State>({
     price: 0,
   })
-  const [client, setClient] = useState<any>(null)
+  const [, setClient] = useState<any>(null)
 
   const connect = (): W3CWebSocket => {
     const client = new W3CWebSocket(tickerConfig.wsURL)

@@ -17,7 +17,7 @@ export const config: Config = {
     doge: {
       symbol: 'DOGE',
       significantDigits: 3,
-      buyPriceUSD: 0.036,
+      buyPriceUSD: 0.0655,
       startingAmountUSD: 1000,
       wsURL: 'wss://stream.binance.com/stream',
       connectionOptions: {
