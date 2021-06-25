@@ -9,7 +9,7 @@ const Container = styled.div`
 const PercentGain = styled.div<{ isGain: boolean }>`
   font-size: 0.8em;
   animation: ${({ isGain }) => isGain ? 'colorRotate 3s linear 0s infinite' : 'unset'};
-  color: red;
+  color: #d5004f;
 
   @keyframes colorRotate {
     from {
